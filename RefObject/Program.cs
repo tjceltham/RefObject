@@ -9,6 +9,11 @@
             UpdateHouse(ref h);
             h.PrintHouse();
 
+            int age =10;
+            ReferencesToPrimatives(ref age);
+            Console.WriteLine(age);
+
+
         }
 
         // A reference to the reference that points to "Collins's house is changed
@@ -20,6 +25,11 @@
         {
             h = new House("Manuell's House");
 
+        }
+
+        static void ReferencesToPrimatives(ref int age)
+        {
+            age = 11;
         }
     }
 }
